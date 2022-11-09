@@ -218,7 +218,7 @@ public class TugasJavaBasic {
                                                             System.out.println("Reamur ke Fahrenheit");
                                                             System.out.println("Masukkan");
                                                             R = sc.nextInt();
-                                                            System.out.println("Hasilnya : " + (5 * R / 4) + "°F");
+                                                            System.out.println("Hasilnya : " + (9 * R / 4 + 32) + "°F");
                                                             break;
                                                         case 3:
                                                             System.out.println(" Exit ");
@@ -241,13 +241,13 @@ public class TugasJavaBasic {
                                                             System.out.println("Fahrenheit ke Celcius ");
                                                             System.out.println("Masukkan ");
                                                             F = sc.nextInt();
-                                                            System.out.println("Hasilnya : " + (5 * F - 32 / 9) + "°C");
+                                                            System.out.println("Hasilnya : " + (5 * (F-32)/9)  + "°C");
                                                             break;
                                                         case 2:
                                                             System.out.println("Fahrenheit ke Reamur  ");
                                                             System.out.println("Masukkan");
                                                             F = sc.nextInt();
-                                                            System.out.println("Hasilnya : " + (F - 32 * 4 / 9) + "°R");
+                                                            System.out.println("Hasilnya : " + (4* (F - 32)/ 9) + "°R");
                                                             break;
                                                         case 3:
                                                             System.out.println(" Exit ");
@@ -448,7 +448,6 @@ public class TugasJavaBasic {
                         } else {
                             System.out.println(" Kembali Ke Menu Awal ");
                         }
-
                         break;
 
                     case 4:

@@ -13,7 +13,7 @@ public class TugasJavaBasic {
         int pin;
         System.out.println("Silahkan Login Terlebih Dahulu");
 
-        System.out.println("Username : ");
+        System.out.println("Silahkan Masukkan Nama : ");
         username = sc.nextLine();
         System.out.println("Masukkan Password : ");
         password = sc.nextLine();
@@ -22,34 +22,32 @@ public class TugasJavaBasic {
 
         // Kondisi
         if (username.equals("Administrator") && password.length() >= 5 && pin == 123456789) {
-            System.out.println("Akses Diterima");
+            System.out.println("Akses Diterima, Selamat Datang");
 
             int var = 1;
-
-            int bola = 4 / 3;
-            int pi = 22 / 7;
             int F, R, C;
-            int panjang, lebar, sisi1, sisi2, sisi3, alas, tinggi, r;
+            int panjang, lebar, sisi,alas, tinggi, r;
 
             do {
                 System.out.println(
                         "Silahkan Pilih Menu \n 1. Bangun Ruang/Datar \n 2. Konversi \n 3. Secret Menu \n 4. Exit");
                 System.out.println("Masukkan Pilihanmu : ");
                 var = sc.nextInt();
+                System.out.println("Anda Memilih No " + var);
 
                 switch (var) {
                     // Bangun Ruang
                     case 1:
                         do {
-                            System.out.println("pilih \n 1. Luas \n 2. Volume \n 3. Exit");
+                            System.out.println("Silahkan pilih \n 1. Luas \n 2. Volume \n 3. Exit");
                             var = sc.nextInt();
                             switch (var) {
                                 // Luas
                                 case 1:
-                                    int Luas;
+                                int Luas;
                                     do {
                                         System.out.println(
-                                                "Pilih : \n 1. Persegi Panjang \n 2. Persegi \n 3. Segitiga \n 4. Lingkaran \n 5. Exit ");
+                                                "Silahkan Pilih : \n 1. Persegi Panjang \n 2. Persegi \n 3. Segitiga \n 4. Lingkaran \n 5. Exit ");
                                         Luas = sc.nextInt();
 
                                         switch (Luas) {
@@ -68,11 +66,9 @@ public class TugasJavaBasic {
                                             case 2:
                                                 System.out.println("Persegi");
                                                 System.out.println("Rumus = sisi * sisi");
-                                                System.out.println("Masukkan Sisi ke-1");
-                                                sisi1 = sc.nextInt();
-                                                System.out.println("Masukkan Sisi ke-2");
-                                                sisi2 = sc.nextInt();
-                                                System.out.println("Hasilnya : " + (sisi1 * sisi2) + " m²");
+                                                System.out.println("Masukkan Sisi² ");
+                                                sisi = sc.nextInt();
+                                                System.out.println("Hasilnya : " + (sisi * sisi) + " m²");
                                                 break;
                                             // Segitiga
                                             case 3:
@@ -89,9 +85,7 @@ public class TugasJavaBasic {
                                             case 4:
                                                 System.out.println("Lingkaran");
                                                 System.out.println("Rumus = 22/7 * r*r");
-                                                System.out.print("Masukkan Radius ke-1 ");
-                                                r = sc.nextInt();
-                                                System.out.print("Masukkan radius ke-2 ");
+                                                System.out.print("Masukkan Radius²  ");
                                                 r = sc.nextInt();
                                                 System.out.println("Hasilnya : " + (22 * r * r / 7) + " m²");
                                                 break;
@@ -109,7 +103,7 @@ public class TugasJavaBasic {
 
                                 // Volume
                                 case 2:
-                                    System.out.println("Pilih Volume");
+                                    System.out.println("Pilih Volume Bangun Dibawah ini");
                                     int volume;
                                     do {
                                         System.out.println(" 1. Balok \n 2. Kubus \n 3. Bola \n 4. Exit");
@@ -131,23 +125,17 @@ public class TugasJavaBasic {
                                                 break;
                                             // Kubus
                                             case 2:
-                                                System.out.println("Rumus Volume Kubus : sisi3 ");
-                                                System.out.println("Masukkan Sisi ke-1 : ");
-                                                sisi1 = sc.nextInt();
-                                                System.out.println("Masukkan Sisi ke-2   : ");
-                                                sisi2 = sc.nextInt();
-                                                System.out.println("Masukkan Sisi ke-3 : ");
-                                                sisi3 = sc.nextInt();
-                                                System.out.println("Hasilnya : " + (sisi1 * sisi2 * sisi3) + " Liter");
+                                                System.out.println("Rumus Volume Kubus : Sisi³");
+                                                System.out.println("Masukkan Sisi³  : ");
+                                                sisi = sc.nextInt();
+                                                System.out.println("Hasilnya : " + (sisi * sisi * sisi) + " Liter");
                                                 break;
                                             // Bola
                                             case 3:
                                                 System.out.println("Rumus Volume Bola :  4/3  22/7  r³ ");
-                                                System.out.println("4/3");
-                                                System.out.println("22/7");
-                                                System.out.println("Masukkan r³ ");
+                                                System.out.println(" Masukkan r³ ");
                                                 r = sc.nextInt();
-                                                System.out.println("Hasilnya : " + (bola * pi * r * r * r) + "Liter");
+                                                System.out.println("Hasilnya : " + (4 * 22 * r * r * r/3/7) + "Liter");
                                                 break;
                                             // Exit Volume
                                             case 4:
@@ -173,7 +161,7 @@ public class TugasJavaBasic {
                     case 2:
                         int konversi;
                         do {
-                            System.out.println("Pilih \n 1. Derajat \n 2. Panjang \n 3. Gram \n 4. Exit");
+                            System.out.println("Silahkan Pilih \n 1. Derajat \n 2. Panjang \n 3. Gram \n 4. Exit");
                             konversi = sc.nextInt();
                             switch (konversi) {
                                 // Derajat
@@ -414,35 +402,38 @@ public class TugasJavaBasic {
                         System.out.println("Masukkan Kode Rahasia : ");
                         Angka = sc.next();
 
-                        if (Angka.length() >= 7 && Angka.length() <= 10) {
+                        if (Angka.length() > 7 && Angka.length() < 10) {
                             System.out.println("Selamat Datang VIP!!");
 
                             do {
                                 System.out.println(
-                                        "Pilih Menu Rahasia \n 1. Uppercase \n 2. Lowercase \n 3. Reverse \n 4. Exit ");
+                                        "Silahkan Pilih Menu Rahasia \n 1. Uppercase \n 2. Lowercase \n 3. Reverse \n 4. Exit ");
                                 angka = sc.nextInt();
                                 switch (angka) {
                                     case 1:
-                                        sc.nextLine();
-                                        System.out.println("Masukkan Text untuk Uppercase ");
-                                        Angka = sc.next();
-                                        System.out.println(Angka.toUpperCase());
+                                    System.out.println("Uppercase");
+                                    sc.nextLine();
+                                    System.out.println("Masukkan Text untuk Uppercase ");
+                                     Angka = sc.nextLine();
+                                     System.out.println(Angka.toUpperCase());
 
                                         break;
                                     case 2:
                                         System.out.println("Lowercase");
                                         sc.nextLine();
                                         System.out.println("Masukkan Text untuk Lowercase ");
-                                        Angka = sc.next();
+                                        Angka = sc.nextLine();
                                         System.out.println(Angka.toLowerCase());
                                         break;
                                     case 3:
-                                        sc.nextLine();
-                                        System.out.println("Masukkan Text untuk Reverse ");
-                                        Angka = sc.nextLine();
-                                        List<String> list = Arrays.asList(Angka.split(""));
-                                        Collections.reverse(list);
-                                        System.out.println(String.join("", list));
+                                    String lorem;
+                                    System.out.println("Reverse");
+                                    sc.nextLine();
+                                    System.out.println("Masukkan Text untuk Reverse ");
+                                    lorem = sc.nextLine();
+                                    List<String> list = Arrays.asList(lorem.split(" "));
+                                    Collections.reverse(list);
+                                    System.out.println(String.join(" ", list));
 
                                         break;
                                     case 4:
@@ -461,6 +452,7 @@ public class TugasJavaBasic {
                         break;
 
                     case 4:
+                    System.out.println("Anda Sudah Selesai");
                         break;
 
                     default:
@@ -471,7 +463,7 @@ public class TugasJavaBasic {
                 System.out.println("Silahkan Kembali");
             }
         } else {
-            System.out.println("Akses Ditolak, Silahkan Run Ulang");
+            System.out.println("Akses Ditolak");
         }
         sc.close();
     }

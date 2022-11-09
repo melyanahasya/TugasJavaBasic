@@ -25,8 +25,8 @@ public class TugasJavaBasic {
             System.out.println("Akses Diterima, Selamat Datang");
 
             int var = 1;
-            int F, R, C;
-            int panjang, lebar, sisi,alas, tinggi, r;
+            float F, R, C;
+            int panjang, lebar, sisi, alas, tinggi, r;
 
             do {
                 System.out.println(
@@ -44,7 +44,7 @@ public class TugasJavaBasic {
                             switch (var) {
                                 // Luas
                                 case 1:
-                                int Luas;
+                                    int Luas;
                                     do {
                                         System.out.println(
                                                 "Silahkan Pilih : \n 1. Persegi Panjang \n 2. Persegi \n 3. Segitiga \n 4. Lingkaran \n 5. Exit ");
@@ -135,7 +135,8 @@ public class TugasJavaBasic {
                                                 System.out.println("Rumus Volume Bola :  4/3  22/7  r³ ");
                                                 System.out.println(" Masukkan r³ ");
                                                 r = sc.nextInt();
-                                                System.out.println("Hasilnya : " + (4 * 22 * r * r * r/3/7) + "Liter");
+                                                System.out.println(
+                                                        "Hasilnya : " + (4 * 22 * r * r * r / 3 / 7) + "Liter");
                                                 break;
                                             // Exit Volume
                                             case 4:
@@ -181,13 +182,13 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Celcius ke Reamur");
                                                             System.out.println("Masukkan ");
-                                                            C = sc.nextInt();
+                                                            C = sc.nextFloat();
                                                             System.out.println("Hasilnya : " + (4 * C / 5) + "°R");
                                                             break;
                                                         case 2:
                                                             System.out.println("Celcius ke Fahrenheit");
                                                             System.out.println("Masukkan");
-                                                            C = sc.nextInt();
+                                                            C = sc.nextFloat();
                                                             System.out.println(
                                                                     "Hasilnya : " + ((C * 9 / 5) + 32) + "°F");
                                                             break;
@@ -211,13 +212,13 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Reamur ke Celcius ");
                                                             System.out.println("Masukkan ");
-                                                            R = sc.nextInt();
+                                                            R = sc.nextFloat();
                                                             System.out.println("Hasilnya : " + (R * 5 / 4) + "°C");
                                                             break;
                                                         case 2:
                                                             System.out.println("Reamur ke Fahrenheit");
                                                             System.out.println("Masukkan");
-                                                            R = sc.nextInt();
+                                                            R = sc.nextFloat();
                                                             System.out.println("Hasilnya : " + (9 * R / 4 + 32) + "°F");
                                                             break;
                                                         case 3:
@@ -240,14 +241,16 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Fahrenheit ke Celcius ");
                                                             System.out.println("Masukkan ");
-                                                            F = sc.nextInt();
-                                                            System.out.println("Hasilnya : " + (5 * (F-32)/9)  + "°C");
+                                                            F = sc.nextFloat();
+                                                            System.out
+                                                                    .println("Hasilnya : " + (5 * (F - 32) / 9) + "°C");
                                                             break;
                                                         case 2:
                                                             System.out.println("Fahrenheit ke Reamur  ");
                                                             System.out.println("Masukkan");
-                                                            F = sc.nextInt();
-                                                            System.out.println("Hasilnya : " + (4* (F - 32)/ 9) + "°R");
+                                                            F = sc.nextFloat();
+                                                            System.out
+                                                                    .println("Hasilnya : " + (4 * (F - 32) / 9) + "°R");
                                                             break;
                                                         case 3:
                                                             System.out.println(" Exit ");
@@ -411,11 +414,11 @@ public class TugasJavaBasic {
                                 angka = sc.nextInt();
                                 switch (angka) {
                                     case 1:
-                                    System.out.println("Uppercase");
-                                    sc.nextLine();
-                                    System.out.println("Masukkan Text untuk Uppercase ");
-                                     Angka = sc.nextLine();
-                                     System.out.println(Angka.toUpperCase());
+                                        System.out.println("Uppercase");
+                                        sc.nextLine();
+                                        System.out.println("Masukkan Text untuk Uppercase ");
+                                        Angka = sc.nextLine();
+                                        System.out.println(Angka.toUpperCase());
 
                                         break;
                                     case 2:
@@ -426,14 +429,14 @@ public class TugasJavaBasic {
                                         System.out.println(Angka.toLowerCase());
                                         break;
                                     case 3:
-                                    String lorem;
-                                    System.out.println("Reverse");
-                                    sc.nextLine();
-                                    System.out.println("Masukkan Text untuk Reverse ");
-                                    lorem = sc.nextLine();
-                                    List<String> list = Arrays.asList(lorem.split(" "));
-                                    Collections.reverse(list);
-                                    System.out.println(String.join(" ", list));
+                                        String lorem;
+                                        System.out.println("Reverse");
+                                        sc.nextLine();
+                                        System.out.println("Masukkan Text untuk Reverse ");
+                                        lorem = sc.nextLine();
+                                        List<String> list = Arrays.asList(lorem.split(" "));
+                                        Collections.reverse(list);
+                                        System.out.println(String.join(" ", list));
 
                                         break;
                                     case 4:
@@ -451,7 +454,7 @@ public class TugasJavaBasic {
                         break;
 
                     case 4:
-                    System.out.println("Anda Sudah Selesai");
+                        System.out.println("Anda Sudah Selesai");
                         break;
 
                     default:

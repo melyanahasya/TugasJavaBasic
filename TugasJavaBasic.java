@@ -94,9 +94,7 @@ public class TugasJavaBasic {
                                                 System.out.println("Mencapai Batas Akhir Luas");
                                                 break;
 
-                                            default:
-                                                break;
-
+                                           
                                         }
                                     } while (Luas < 5);
                                     break;
@@ -142,8 +140,7 @@ public class TugasJavaBasic {
                                             case 4:
                                                 System.out.println("Mencapai Batas Akhir Volume");
                                                 break;
-                                            default:
-                                                break;
+                                          
                                         }
 
                                     } while (volume < 4);
@@ -196,8 +193,7 @@ public class TugasJavaBasic {
                                                             System.out.println(" Exit ");
                                                             break;
 
-                                                        default:
-                                                            break;
+                                                       
                                                     }
                                                 } while (celcius < 3);
                                                 break;
@@ -225,8 +221,7 @@ public class TugasJavaBasic {
                                                             System.out.println(" Exit ");
                                                             break;
 
-                                                        default:
-                                                            break;
+                                                        
                                                     }
                                                 } while (reamur < 3);
                                                 break;
@@ -256,8 +251,7 @@ public class TugasJavaBasic {
                                                             System.out.println(" Exit ");
                                                             break;
 
-                                                        default:
-                                                            break;
+                                                       
                                                     }
 
                                                 } while (fahrenheit < 3);
@@ -323,8 +317,6 @@ public class TugasJavaBasic {
                                                 System.out.println("Exit");
                                                 break;
 
-                                            default:
-                                                break;
                                         }
 
                                     } while (meter < 7);
@@ -380,8 +372,6 @@ public class TugasJavaBasic {
                                                 System.out.println("Exit");
                                                 break;
 
-                                            default:
-                                                break;
                                         }
 
                                     } while (gram < 7);
@@ -392,8 +382,7 @@ public class TugasJavaBasic {
                                     System.out.println("Mencapai Batas Akhir Konversi");
                                     break;
 
-                                default:
-                                    break;
+                               
                             }
 
                         } while (konversi < 4);
@@ -443,8 +432,7 @@ public class TugasJavaBasic {
                                         System.out.println("Exit");
                                         break;
 
-                                    default:
-                                        break;
+                                  
                                 }
 
                             } while (angka < 4);
@@ -457,8 +445,7 @@ public class TugasJavaBasic {
                         System.out.println("Anda Sudah Selesai");
                         break;
 
-                    default:
-                        break;
+                    
                 }
             } while (var < 4);
             {
